@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <style>
+            body{
+                background:url("login_background.jpg") no-repeat;
+                background-size:cover;
+                height:max-content;
+                overflow-y:hidden;
+            }
+            caption{
+                color:red;
+                padding-top:5%;
+                padding-bottom:3%;
+            }
+            tr,td{
+                padding:3%;
+                width:min-content;
+            }
+            table{
+                font-size:25px;
+            }
+            form{
+                
+                background-size:300px;
+                height:fit-content;
+                width:fit-content;
+                position:relative;
+                top:30%;
+                left:40%;
+            }
+            table{
+                position:relative;
+                top:10%;
+            }
+        </style>
+    </head>
+    <body align="center">
+        <form name="myForm" action="/love.html" onsubmit="return validate()" method="post">
+            <table align="center">
+                <caption>❤️Valentine❤️</caption>
+                <tr>
+                    <td>
+                        User Name
+                    </td>
+                    <td><input type="text" id="uname"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        Password
+                    </td>
+                    <td>
+                        <input type="password" id="pwd"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset"/>&nbsp&nbsp&nbsp&nbsp
+                        <input type="submit" value="Submit"/>
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+        <script>
+            function validate(){
+                var uname=document.getElementById("uname").value;
+                var pwd=document.getElementById("pwd").value;
+                if(uname=="love" && pwd=="Naidu"){
+                    return true;
+                }
+               alert("Invalid credentials");
+                return false;
+            }
+        </script>
+    </body>
+</html>
