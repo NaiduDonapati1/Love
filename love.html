@@ -47,11 +47,14 @@ Love
 </style>
 </head>
 <body align="center">
+    <Audio id="audio" hidden>
+
+    </Audio>
     <div>
         <img src="love1.jpg" onclick="display(event)"/>
         <img src="love2.jpg" onclick="display(event)"/>
         <img src="love3.jpg" onclick="display(event)"/>
-     </div>
+    </div>
     <div>
         <img src="love4.jpg" onclick="display(event)"/>
         <img src="love5.jpg" onclick="display(event)"/>
@@ -63,6 +66,7 @@ Love
         <img src="love9.jpg" onclick="display(event)"/>
     </div>
     <div>
+        <img src="love10.jpg" onclick="display(event)"/>
         <img src="love11.jpg" onclick="display(event)"/>
         <img src="love12.jpg" onclick="display(event)"/>
     </div>
@@ -73,8 +77,21 @@ Love
         </h1>
     </footer>
     <script>
+        let x = document.getElementById("audio");
+        x.loop=true;
+        var interval;
+        var y;
         function display(e){
-            open(e.target.src);
+             y=open(e.target.src);
+            x.setAttribute("src",e.target.src.substring(0,e.target.src.length-3)+"mp3");
+            x.play();
+            Interval = setInterval(unload, 1000);
+        }
+        function unload(){
+            if(y.closed){
+                x.pause();
+                clearInterval(Interval);
+            }
         }
     </script>
 </body>
