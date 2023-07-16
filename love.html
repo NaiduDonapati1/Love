@@ -27,12 +27,14 @@ Love
         background-color:lightyellow;;
         padding-top:0px;
         border:1px solid black;
+        display:flex;
     }
     img{
         border:1px solid red;
         padding:0px;
         margin:0px;
         width:33%;
+        
     }
     footer{
         padding-top:0px;
@@ -46,17 +48,23 @@ Love
 </head>
 <body align="center">
     <div>
-        <img src="love1.jpg"/>
-        <img src="love2.jpg"/>
-        <img src="love3.jpg"/>
-        <img src="love4.jpg"/>
-        <img src="love5.jpg"/>
-        <img src="love6.jpg"/>
-        <img src="love7.jpg"/>
-        <img src="love8.jpg"/>
-        <img src="love9.jpg"/>
-        <img src="love11.jpg"/>
-        <img src="love12.jpg"/>
+        <img src="love1.jpg" onclick="display(event)"/>
+        <img src="love2.jpg" onclick="display(event)"/>
+        <img src="love3.jpg" onclick="display(event)"/>
+        <img src="love4.jpg" onclick="display(event)"/>
+        </div>
+        <div>
+        <img src="love5.jpg" onclick="display(event)"/>
+        <img src="love6.jpg" onclick="display(event)"/>
+        <img src="love7.jpg" onclick="display(event)"/>
+        </div>
+        <div>
+        <img src="love8.jpg" onclick="display(event)"/>
+        <img src="love9.jpg" onclick="display(event)"/>
+        <img src="love11.jpg" onclick="display(event)"/>
+        </div>
+        <div>
+        <img src="love12.jpg" onclick="display(event)"/>
     </div>
     <footer>
         <h1>
@@ -64,5 +72,10 @@ Love
             <sub>Loves You</sub>
         </h1>
     </footer>
+    <script>
+        function display(e){
+            open(e.target.src);
+        }
+    </script>
 </body>
 </html>
