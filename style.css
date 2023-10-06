@@ -51,6 +51,7 @@
                 border:1px solid red;
                 padding:0px;
                 margin:0px;
+                width:80%;
             }
             #left{
                 position:fixed;
@@ -66,11 +67,11 @@
                 background:url("left.jpg");
                 background-size:100%;
                 width:10%;
-                height:20%;
+                height:10%;
             }
             #right{
                 background:url("right.jpg");
                 background-size:100%;
                 width:10%;
-                height:20%;
+                height:10%;
             }
