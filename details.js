@@ -2,7 +2,7 @@ var count=1;
 var img=document.getElementById("img");
 var aud=document.getElementById("audio");
 function forward(e){
-    if (count<=10){
+    if (count<=12){
         count+=1;
     }
     else{
@@ -15,7 +15,7 @@ function forward(e){
 }
 function backward(e){
     if (count<=0){
-        count=10;
+        count=12;
     }
     else{
         count-=1;
@@ -33,6 +33,9 @@ function validate(){
             document.getElementById("bd").hidden=false;
             document.getElementById("foot").hidden=false;
             document.getElementById("f").hidden=true;
+            img.setAttribute("src","love"+count+".jpg");
+            aud.setAttribute("src","love"+count+".mp3");
+            aud.play();
             return true;
       }
       alert("Invalid credentials");
