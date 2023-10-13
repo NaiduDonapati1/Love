@@ -5,64 +5,30 @@
         <title>
             Love
         </title>
-        <header id="head" hidden>
-            <h1>My Love</h1>
-            <h4>I Love You</h4>
-        </header>
-        <link rel="stylesheet" href="style.css">
+    <head>
+    <style>
+        .container {
+            position: relative;
+            padding-left:0px;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 49.8%; 
+        }
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     </head>
-    <body align="center">
-        <div id="f" >
-            <div id="tb">
-                <table align="center">
-                    <caption>❤️Valentine❤️</caption>
-                    <tr>
-                        <td>
-                            User Name
-                        </td>
-                        <td><input type="text" id="uname"/></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Password
-                        </td>
-                        <td>
-                            <input type="password" id="pwd"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                        </td>
-                        <td>
-                            <input type="reset" value="Reset"/>&nbsp&nbsp&nbsp&nbsp
-                            <Button onClick="validate()">Submit</Button>
-                        </td>
-                        
-                    </tr>
-    
-                </table>
-            </div>
-            
+    <body>
+        <div class="container">
+            <iframe src="login.html" id="frame" name="frame" onclick="load()" height="100%" allowfullscreen>
+            </iframe>
         </div>
-        <Audio id="audio" hidden>
-        </Audio>
-        <div id="bd" hidden>
-            <button onclick="backward(event)" id="left">
-                left
-            </button>
-            <img src="love1.jpg" id="img"/>
-            <button onclick="forward(event)" id="right">
-                right
-            </button>
-        </div>
-        <footer id="foot" hidden>
-            <h1>
-                Naidu
-                <sub>Loves You</sub>
-            </h1>
-        </footer>
-        <script src="details.js">  
-        </script>
     </body>
 </html>
