@@ -2,7 +2,7 @@ source=document.getElementById("frame");
 function validate(){
     var uname=document.getElementById("uname").value;
     var pwd=document.getElementById("pwd").value;
-    if(uname=="love" && pwd=="Naidu"){
+    if(uname=="keerthireddy" && pwd=="0627"){
         return true;
     }
     else{
